@@ -1,16 +1,26 @@
 ---
-
+import "./src/styles/global.css";
 ---
 
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Paralelo Dolar</title>
+  </head>
+  <body class="bg-black text-white mr-0 p-0">
+    <main>
+		<h1 class="text-center text-7xl font-extrabold">Paralelo <span class="block">Dolar 💵</span></h1>
+    </main>
+	<section aria-label="Tasas del dolar">
+		<div class="flex flex-col justify-center items-center gap-6">
+        <h1 id="paralelo" class="text-5xl">Dolar Paralelo:</h1>
+        <h3 id="bcv" class="text-5xl">Dolar BCV:</h3>
+        <h3 id="binanceusdt" class="text-5xl">Binance USDT:</h3>
+        <h3 id="promedio" class="text-5xl">Promedio:</h3>
+      </div>
+	</section>
+  </body>
 </html>
