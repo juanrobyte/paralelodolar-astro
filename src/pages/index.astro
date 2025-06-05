@@ -10,18 +10,51 @@ import "./src/styles/global.css";
     <meta name="generator" content={Astro.generator} />
     <title>Paralelo Dolar</title>
   </head>
-  <body class="bg-black text-white mr-0 p-0">
+  <body class="bg-white text-black mr-0 p-0">
     <main>
-		<h1 class="text-center text-7xl font-extrabold">Paralelo <span class="block">Dolar 💵</span></h1>
+      <h1 class="text-center text-7xl font-extrabold mb-20">
+        Paralelo <span class="block">Dolar 💵</span>
+      </h1>
     </main>
-	<section aria-label="Tasas del dolar">
-		<div class="flex flex-col justify-center items-center gap-6">
-        <h1 id="paralelo" class="text-5xl">Dolar Paralelo:</h1>
-        <h3 id="bcv" class="text-5xl">Dolar BCV:</h3>
-        <h3 id="binanceusdt" class="text-5xl">Binance USDT:</h3>
-        <h3 id="promedio" class="text-5xl">Promedio:</h3>
-        <h3>hola</h3>
+    <section aria-label="Tasas del dolar">
+      <div class="px-4 mx-auto max-w-screen-xl gap-10 flex flex-col justify-center items-center w-full">
+        <div class="flex gap-6">
+          <img
+            src="../public/favicon.png"
+            alt="Dolar Paralelo"
+            width="60px"
+            height="60px"
+          />
+          <h1 id="paralelo" class="text-5xl">Dolar Paralelo:</h1>
+        </div>
+        <div class="flex gap-6">
+          <img
+            src="../public/BCV.png"
+            alt="Dolar BCV"
+            width="60px"
+            height="60px"
+          />
+          <h1 id="paralelo" class="text-5xl">Dolar BCV:</h1>
+        </div>
+        <div class="flex gap-6">
+          <img
+            src="../public/Binance.png"
+            alt="Dolar Binance"
+            width="60px"
+            height="60px"
+          />
+          <h1 id="paralelo" class="text-5xl">Dolar Binance/USDT:</h1>
+        </div>
+        <div class="flex gap-6">
+          <img
+            src="../public/favicon.png"
+            alt="Dolar Paralelo"
+            width="60px"
+            height="60px"
+          />
+          <h1 id="paralelo" class="text-5xl">Dolar Promedio:</h1>
+        </div>
       </div>
-	</section>
+    </section>
   </body>
 </html>
