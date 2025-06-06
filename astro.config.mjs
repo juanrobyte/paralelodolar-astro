@@ -1,11 +1,21 @@
-// @ts-check
-import { defineConfig } from 'astro/config';
+import { defineConfig } from "astro/config";
+import tailwind from "@astrojs/tailwind";
 
-import tailwindcss from '@tailwindcss/vite';
-
-// https://astro.build/config
 export default defineConfig({
-  vite: {
-    plugins: [tailwindcss()]
-  }
+  integrations: [
+    tailwind({
+      config: {
+        content: ["./src//*.{astro,html,js,jsx,ts,tsx}"],
+        theme: {
+          extend: {
+            fontFamily: {
+              poppins: ["Poppins", "sans-serif"],
+              inter: ["Inter", "sans-serif"],
+            },
+          },
+        },
+        plugins: [],
+      },
+    }),
+  ],
 });
